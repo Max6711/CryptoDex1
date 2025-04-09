@@ -1,0 +1,166 @@
+
+#header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: .5em;
+}
+
+#title {
+  cursor: pointer;
+  transition: opacity 250ms ease-in-out;
+}
+
+#title:hover {
+  opacity: .8;
+}
+
+header {
+  padding: 12px 24px;
+  transition: all 1s ease-in-out;
+}
+
+header h1 {
+  font-size: max(20px, 4vh);
+  display: inline-block;
+  background: linear-gradient(-45deg, yellow, lightseagreen);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: #00000011 3px 3px 3px;
+}
+
+header .version {
+  font-style: italic;
+  font-size: .5em;
+  background: linear-gradient(45deg, yellow, red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header .version .low {
+  font-size: .5em;
+  margin-right: .5em;
+}
+
+.menu {
+  display: inline-flex;
+  flex: auto;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  justify-content: center;
+}
+
+.menu .menu-item {
+  flex-grow: 1;
+  cursor: pointer;
+  max-width: 250px;
+  text-align: center;
+  border-right: lightgrey 1px solid;
+}
+
+.menu .menu-item.menu-news {
+  border-right: none;
+}
+
+.menu .menu-item h2 {
+  padding: 12px 9px 9px;
+  margin: .25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.menu .menu-item h2 img {
+  height: 1em;
+  max-height: 24px;
+  margin-right: .5em;
+}
+
+.menu .menu-item .low {
+  font-size: .6em;
+}
+
+.menu .menu-item.active h2 {
+  border-radius: 24px;
+}
+
+.menu .menu-item:hover h2 {
+  border-radius: unset;
+}
+
+.menu .menu-item.active.menu-charts h2,
+.menu .menu-item.menu-charts:hover h2 {
+  background-color: lavender;
+}
+
+.menu .menu-item.active.menu-wallet h2,
+.menu .menu-item.menu-wallet:hover h2 {
+  background-color: moccasin;
+}
+
+.menu .menu-item.active.menu-news h2,
+.menu .menu-item.menu-news:hover h2 {
+  background-color: palegreen;
+}
+
+.connect-wallet-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 12px;
+  width: 100%;
+}
+.connect-wallet-container button {
+  display: inline-flex;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border: lightgrey 1px solid;
+  border-radius: 12px;
+  padding: 2px 12px;
+  cursor: pointer;
+}
+.connect-wallet-container button:hover {
+  box-shadow: 0 0 12px #888888ee;
+}
+.connect-wallet-container button img {
+  height: 100%;
+  margin: 4px;
+}
+
+@media (max-width: 800px) {
+  header {
+    font-size: 2rem;
+    padding: 8px 16px;
+  }
+
+  .menu {
+    padding: 6px 12px;
+    width: 75%;
+  }
+
+  .menu .menu-item h2 {
+    padding: 6px 9px 3px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  header {
+    font-size: 1.5rem;
+    padding: 6px 12px;
+  }
+
+  .menu {
+    padding: 3px 6px;
+    width: 95%;
+  }
+
+  .menu .menu-item h2 {
+    font-size: 16px;
+  }
+}

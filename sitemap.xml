@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://dexpairs.xyz/</loc>
+    </url>
+    <url>
+        <loc>https://dexpairs.xyz/charts</loc>
+    </url>
+    <url>
+        <loc>https://dexpairs.xyz/wallet</loc>
+    </url>
+    <url>
+        <loc>https://dexpairs.xyz/news</loc>
+    </url>
+    <url>
+        <loc>https://dexpairs.xyz/donate</loc>
+    </url>
+    <url>
+        <loc>https://dexpairs.xyz/beta/</loc>
+    </url>
+    <url>
+        <loc>https://dexpairs.xyz/beta/charts</loc>
+    </url>
+    <url>
+        <loc>https://dexpairs.xyz/beta/wallet</loc>
+    </url>
+    <url>
+        <loc>https://dexpairs.xyz/feed.atom</loc>
+    </url>
+</urlset>

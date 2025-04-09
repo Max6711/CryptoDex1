@@ -1,0 +1,222 @@
+<!doctype html>
+
+<html lang="en" class='color-transition'>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+  <!-- PWA -->
+  <meta name="theme-color" content="#1E2124" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#1E2124" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="msapplication-TileImage" content="/img/background-multichain-min.png">
+  <meta name="msapplication-TileColor" content="#1E2124">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <title>DexPairs.xyz - Beta</title>
+  <meta name="description" content="Track prices of your tokens on multiple chains through multiple protocols. Explore your Portfolio and display your NFTs as a gallery. Supports Ethereum, Cronos, BNB Chain, Gnosis, Polygon, Fantom, Arbitrum One, zkSync Era, Celo and Avalanche chains." />
+  <meta name="author" content="Dorian Bayart" />
+  <meta name="keywords" content="dexpairs, crypto, currency, prices, portfolio, tokens, wallet, nft, bitcoin, ens, eth, subgraph, matic, polygon, ethereum, cronos, bsc, bnb chain, fantom, xdai, gnosis, arbitrum, avalanche, celo, zksync, defi, dex, uniswap, quickswap, pancakeswap, spiritswap, honeyswap" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="shortcut icon" type="image/png" href="/img/background-multichain-min.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/img/background-multichain-min.png" />
+  <link href="./" rel="canonical" />
+
+  <meta property="og:title" content="DexPairs.xyz" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Track prices of your tokens on multiple chains through multiple protocols. Explore your Portfolio and display your NFTs as a gallery. Supports Ethereum, Cronos, BNB Chain, Gnosis, Polygon, Fantom, Arbitrum One, zkSync Era, Celo and Avalanche chains." />
+  <meta property="og:url" content="./" />
+  <meta property="og:image" content="/img/background-multichain-min.png" />
+  <meta property="og:site_name" content="DexPairs" />
+
+  <link rel="alternate" type="application/atom+xml" title="DexPairs.xyz News" href="/feed.atom" />
+
+  <link rel="manifest" href="/manifest.json">
+  <script src="/public/js/pwa.js"></script>
+
+  <link rel="stylesheet" href="./public/colors.css">
+  <link rel="stylesheet" href="./public/common.css">
+  <link rel="stylesheet" href="./public/index.css">
+  <link rel="stylesheet" href="./public/footer.css">
+
+  <script defer src="./public/common.js"></script>
+  <script defer src="/public/js/websocket.js"></script>
+  <script defer src="/public/statistics.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZQ634B55N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-ZZQ634B55N');
+  </script>
+</head>
+
+<body>
+  <header>
+    <a id='title' href="./" aria-label="Homepage">
+      <img src='/img/dexpairs/dexpairs_5_slogan.svg' title='DexPairs' alt='DexPairs banner with icon and slogan' width='auto' height='80' loading='lazy'>
+      <span class='version'>
+        BETA
+      </span>
+    </a>
+  </header>
+
+
+
+
+  <section class='section-charts'>
+    <h2>Track Crypto Prices</h2>
+    <div class='content-illustration'>
+      <div class='content'>
+        <ul>
+          <li>Track historical on-chain prices of hundreds of tokens, data comes directly from popular DEXes using TheGraph protocol</li>
+          <li>
+            Display price evolution based on any token you choose, and compare token performance<br />
+            (ie: <a href='./charts?dex=UNISWAP&token=AAVE&base=COMP&interval=4h&timeframe=1m' target='_blank'>Aave/Comp</a>, <a href='./charts?dex=HONEYSWAP&token=CRV&base=UNI&interval=4h&timeframe=1m' target='_blank'>Crv/Uni</a>)
+          </li>
+          <li>Save up to 6 favorite pairs you want to monitor</li>
+          <li>Keep an eye on real-time updated current gas prices</li>
+          <li><i>Soon</i>: Swap tokens directly on DexPairs (powered by Paraswap.io)!</li>
+        </ul>
+
+        <a href='./charts' title='Track prices' class='GoTo'>Track Crypto Prices</a>
+      </div>
+      <div class='illustration'>
+        <img src='/img/illustrations/undraw_Growing_re_olpi.svg' alt='Track Prices' width='256px' height='192px' loading='lazy'>
+      </div>
+    </div>
+  </section>
+
+
+  <section class='supported-blockchains'>
+    <h3>Supported Blockchains</h3>
+    <ul>
+      <li>
+        <img src="/img/ethereum-icon.svg" alt="Ethereum Logo" width="32px" height="32px" loading='lazy'>
+        Ethereum
+      </li>
+      <li>
+        <img src="/img/cronos-icon.svg" alt="Cronos Logo" width="32px" height="32px" loading='lazy'>
+        Cronos
+      </li>
+      <li>
+        <img src="/img/bsc-icon.svg" alt="BNB Chain Logo" width="32px" height="32px" loading='lazy'>
+        BNB Chain
+      </li>
+      <li>
+        <img src="/img/xdai-icon.svg" alt="Gnosis Chain (xDai) Logo" width="32px" height="32px" loading='lazy'>
+        Gnosis (xDai)
+      </li>
+      <li>
+        <img src="/img/polygon-icon.svg" alt="Polygon Logo" width="32px" height="32px" loading='lazy'>
+        Polygon/Matic
+      </li>
+      <li>
+        <img src="/img/fantom-icon.svg" alt="Fantom Logo" width="32px" height="32px" loading='lazy'>
+        Fantom/Opera
+      </li>
+      <li>
+        <img src="/img/arbitrum-icon.svg" alt="Arbitrum Logo" width="32px" height="32px" loading='lazy'>
+        Arbitrum One
+      </li>
+      <li>
+        <img src="/img/zksync-icon.svg" alt="zkSync Era∎ Logo" width="32px" height="32px" loading='lazy'>
+        zkSync Era∎
+      </li>
+      <li>
+        <img src="/img/celo-icon.svg" alt="Celo Logo" width="32px" height="32px" loading='lazy'>
+        Celo
+      </li>
+      <li>
+        <img src="/img/avalanche-icon.svg" alt="Avalanche Logo" width="32px" height="32px" loading='lazy'>
+        Avalanche
+      </li>
+      <li>
+        <i>More to come!</i>
+      </li>
+    </ul>
+  </section>
+
+
+  <section class='section-wallet'>
+    <h2>Explore your Wallet</h2>
+    <div class='content-illustration'>
+      <div class='illustration'>
+        <img src='/img/illustrations/undraw_Portfolio_re_qwm5.svg' alt='Explore your Wallet' width='256px' height='192px' loading='lazy'>
+      </div>
+      <div class='content'>
+        <ul>
+          <li>Inspect your cross-chain portfolio with real prices at one place</li>
+          <li>Plot pie charts and measure how distributed you are over the different tokens, protocols, blockchains, addresses</li>
+          <li>Display your NFTs collection as a gallery, and share it!</li>
+          <li>Estimate your portfolio history value on a global chart (based on Ethereum price evolution)</li>
+          <li>List all your transactions, filter by network</li>
+          <li>Track your whole portfolio (multiple addresses separated by comma)</li>
+          <li>Use your ENS name instead of full ERC-20</li>
+
+        </ul>
+
+        <div class='go-to-container'>
+          <a href='./wallet' title='Explore your Portfolio' class='GoTo'>Explore your Portfolio</a>
+          <a href='./wallet?address=0x0255c9D3850cacA1152AEB20425C264787661692' title='Open a demo wallet' class='GoToDemoLink'>Open a demo wallet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class='in-between-illustration'>
+    <img src='/img/illustrations/undraw_progressive_app_m9ms.svg' alt='Many useful features' width='256px' height='192px' loading='lazy'>
+  </div>
+
+  <section class='section-news'>
+    <h2>Many other features</h2>
+    <div class='content-illustration'>
+      <div class='content'>
+        <ul>
+          <li>Keep an eye on current minimal gas fees in realtime</li>
+          <li>Use your mobile, tablet or desktop, the design is responsive</li>
+          <li>Subscribe to a dedicated RSS feed - <a href='/news'>Read the DexPairs.xyz News</a>!</li>
+          <li><i>Soon</i>: Stay tuned, many more useful features are in the pipe!</li>
+
+        </ul>
+      </div>
+      <div class='illustration'>
+        <img src='/img/illustrations/undraw_ethereum_desire_wy1b.svg' alt='Many other features' width='256px' height='192px' loading='lazy'>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <a id="roadmap_link" class="link-with-img" href="https://github.com/dorianbayart/DexPairs/projects/1" target="_blank" rel="noopener">
+      <img src="/img/roadmap-icon.svg" title="Roadmap Picture" alt="Roadmap Picture" width="20px" height="20px" />
+      <span>Roadmap</span>
+    </a>
+    <a id="github_link" class="link-with-img" href="https://github.com/dorianbayart/DexPairs" target="_blank" rel="noopener">
+      <img src="/img/GitHub-Mark-32px.png" title="Github Logo" alt="Github Logo" width="20px" height="20px" />
+      <span>GitHub</span>
+    </a>
+    <a id="beta_link" class="link-with-img" href="/beta/">
+      <img src='/img/icons/box.svg' title="Beta Sandbox" alt="Sandbox Logo" width="20px" height="20px" />
+      <span>Beta</span>
+    </a>
+    <a id="statistics_link" class="link-with-img" href="/statistics">
+      <img src='/img/icons/box.svg' title="Statistics" alt="Statistics" width="20px" height="20px" />
+      <span>Stats</span>
+    </a>
+    <a id="donate_link" class="link-with-img" href="/donate">
+      <img src='/img/icons/gift.svg' title="Donate Logo" alt="Donate Logo" width="20px" height="20px" />
+      <span>Donate</span>
+    </a>
+  </footer>
+
+
+  <div class='body-background'></div>
+
+
+</body>
+</html>

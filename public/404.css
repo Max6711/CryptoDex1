@@ -1,0 +1,40 @@
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.body-background {
+  opacity: .2;
+  background-image: url('/img/background-multichain.svg');
+}
+
+.centered-container {
+  text-align: center;
+}
+
+h1 {
+  background: linear-gradient(135deg, purple, lightseagreen);
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  font-size: max(10vh, 5em);
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+  text-shadow: #00000011 3px 3px 3px;
+}
+
+h2 {
+  font-size: max(3vh, 1.4em);
+  font-weight: lighter;
+  margin: 0 auto 48px;
+  max-width: min(480px, 85%);
+}
+
+a {
+  border-radius: 8px;
+  box-shadow: 0 0 24px #888888;
+  font-size: 1.1em;
+  padding: 9px 12px 6px;
+}
